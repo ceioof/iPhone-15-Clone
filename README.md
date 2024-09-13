@@ -2,7 +2,7 @@
 
 ## 🚀 Introduction
 
-Welcome to the iPhone 15 Pro Clone project, a showcase of Apple's iPhone 15 Pro website recreated using Next.js, React.js, and Tailwind CSS. This project leverages GSAP for animations and Three.js with React Three Fiber for immersive 3D model rendering.
+This is a clone of Apple's iPhone 15 Pro website using **Next.js** and **TailwindCSS**. It highlights the effective use of **GSAP (Greensock Animations)** and **Three.js** for displaying iPhone 15 Pro models in various colors and shapes.
 
 ---
 
