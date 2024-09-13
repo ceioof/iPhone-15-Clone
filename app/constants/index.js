@@ -1,11 +1,16 @@
 import {
+  allColors,
   blackImg,
+  blackTitanium,
   blueImg,
+  blueTitanium,
   highlightFirstVideo,
   highlightFourthVideo,
   highlightSecondVideo,
   highlightThirdVideo,
+  naturalTitanium,
   whiteImg,
+  whiteTitanium,
   yellowImg,
 } from "../utils";
 
@@ -17,7 +22,7 @@ export const navLists = [
   "Watch",
   "Vision",
   "AirPods",
-  "TV & Home",
+  "TV&Home",
   "Support",
 ];
 
@@ -59,29 +64,64 @@ export const highlightsSlides = [
 export const models = [
   {
     id: 1,
-    title: "iPhone 15 Pro in Natural Titanium",
-    color: ["#8F8A81", "#ffe7b9", "#6f6c64"],
-    img: yellowImg,
+    title: "iPhone 15 Pro in All Colors",
+    color: [
+      "linear-gradient(90deg, #1C1C1E, #4B4B4B, #2E3A59, #C4C4C6)",
+      "linear-gradient(90deg, #2D2D2D, #E0E0E0, #2B2E40, #B3B3B3)",
+    ],
+    img: allColors,
   },
   {
     id: 2,
-    title: "iPhone 15 Pro in Blue Titanium",
-    color: ["#53596E", "#6395ff", "#21242e"],
-    img: blueImg,
+    title: "iPhone 15 Pro in Natural Titanium",
+    color: ["#8F8A81", "#ffe7b9", "#6f6c64"],
+    img: naturalTitanium,
   },
   {
     id: 3,
-    title: "iPhone 15 Pro in White Titanium",
-    color: ["#C9C8C2", "#ffffff", "#C9C8C2"],
-    img: whiteImg,
+    title: "iPhone 15 Pro in Blue Titanium",
+    color: ["#53596E", "#6395ff", "#21242e"],
+    img: blueTitanium,
   },
   {
     id: 4,
+    title: "iPhone 15 Pro in White Titanium",
+    color: ["#C9C8C2", "#ffffff", "#C9C8C2"],
+    img: whiteTitanium,
+  },
+  {
+    id: 5,
     title: "iPhone 15 Pro in Black Titanium",
     color: ["#454749", "#3b3b3b", "#181819"],
-    img: blackImg,
+    img: blackTitanium,
   },
 ];
+// export const models = [
+//   {
+//     id: 1,
+//     title: "iPhone 15 Pro in Natural Titanium",
+//     color: ["#8F8A81", "#ffe7b9", "#6f6c64"],
+//     img: yellowImg,
+//   },
+//   {
+//     id: 2,
+//     title: "iPhone 15 Pro in Blue Titanium",
+//     color: ["#53596E", "#6395ff", "#21242e"],
+//     img: blueImg,
+//   },
+//   {
+//     id: 3,
+//     title: "iPhone 15 Pro in White Titanium",
+//     color: ["#C9C8C2", "#ffffff", "#C9C8C2"],
+//     img: whiteImg,
+//   },
+//   {
+//     id: 4,
+//     title: "iPhone 15 Pro in Black Titanium",
+//     color: ["#454749", "#3b3b3b", "#181819"],
+//     img: blackImg,
+//   },
+// ];
 
 export const sizes = [
   { label: '6.1"', value: "small" },

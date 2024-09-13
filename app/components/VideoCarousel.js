@@ -10,6 +10,26 @@ import { pauseImg, playImg, replayImg } from "../utils";
 import Image from "next/image";
 
 const VideoCarousel = () => {
+  // !! parent animations
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#trigger",
+        start: "top bottom",
+        end: "bottom bottom ",
+        scrub: true,
+      },
+    });
+
+    tl.to("#highlight-title", { opacity: 1, y: 0 });
+    tl.to("#watch", { opacity: 1, y: 0, stagger: 0.25 });
+
+    return () => {
+      tl.scrollTrigger && tl.scrollTrigger.kill();
+    };
+  }, []);
+  // !!parent animations
+
   // Refs
   const videoRef = useRef([]);
   const videoSpanRef = useRef([]);
