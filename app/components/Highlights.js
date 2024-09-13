@@ -1,7 +1,11 @@
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import { rightImg, watchImg } from "../utils";
-import VideoCarousel from "./VideoCarousel";
-import ClientHighlight from "./ClientHighlight";
+// import VideoCarousel from "./VideoCarousel";
+const VideoCarousel = dynamic(() => import("./VideoCarousel"), { ssr: false });
+// import ClientHighlight from "./ClientHighlight";
+const ClientHighlight = dynamic(() => import("./ClientHighlight"));
+
 const Highlights = () => {
   return (
     <section
@@ -9,6 +13,7 @@ const Highlights = () => {
       className="w-screen overflow-hidden h-full sm:py-32 py-20 sm:px-10 px-5 bg-zinc"
     >
       <ClientHighlight />
+
       <div id="trigger" className="ms-auto me-auto relative max-w-[1120px] ">
         <div className="mb-12 w-full md:flex items-end justify-between">
           <h1

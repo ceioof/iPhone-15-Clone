@@ -1,7 +1,8 @@
+import dynamic from "next/dynamic.js";
 import Hero from "./components/Hero.js";
-import Highlights from "./components/Highlights.js";
+const Highlights = dynamic(() => import("./components/Highlights.js"));
+const Model = dynamic(() => import("./components/Model.jsx"), { ssr: false });
 import Features from "./components/Features.js";
-import Model from "./components/Model.jsx";
 import HowItWorks from "./components/HowItWorks.js";
 
 export default function Home() {

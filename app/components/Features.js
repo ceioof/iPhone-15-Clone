@@ -1,5 +1,6 @@
+import dynamic from "next/dynamic";
 import { explore1Img, explore2Img } from "../utils";
-import ClientSideAnimations from "./ClientSideAnimations";
+const ClientSideAnimations = dynamic(() => import("./ClientSideAnimations"));
 import Image from "next/image";
 
 const Features = () => {

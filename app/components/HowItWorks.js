@@ -1,9 +1,9 @@
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import { chipImg, frameImg, frameVideo } from "../utils";
-import ClientHiw from "./ClientHiw";
-// const ClientHowItWorks = dynamic(() => import("./ClientHowItWorks"), {
-//   ssr: false,
-// });
+const ClientHiw = dynamic(() => import("./ClientHiw"), {
+  ssr: false,
+});
 
 const HowItWorks = () => {
   return (
