@@ -12,6 +12,7 @@
     "@gsap/react": "^2.1.1",
     "@react-three/drei": "^9.112.0",
     "@react-three/fiber": "^8.17.6",
+    "@vercel/speed-insights": "^1.0.12",
     "gsap": "^3.12.5",
     "next": "^14.2.8",
     "react": "^18",

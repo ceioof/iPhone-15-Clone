@@ -29,9 +29,13 @@ const Galary = () => {
           Take a closer look.
         </h1>
         <div>
-          <div className=" w-full h-[75vh] md:h-[90vh]  overflow-hidden relative ">
+          <div className=" w-full h-[70vh] md:h-[85vh]  overflow-hidden relative ">
             <div className="w-full flex justify-center items-center h-full">
-              <Image src={model.img} alt={model.title} className={`h-[80%] `} />
+              <Image
+                src={model.img}
+                alt={model.title}
+                className={`${model.id === 1 && "w-[400px] md:w-[500px]"}`}
+              />
             </div>
           </div>
         </div>
