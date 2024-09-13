@@ -31,7 +31,7 @@ const Galary = () => {
         <div>
           <div className=" w-full h-[75vh] md:h-[90vh]  overflow-hidden relative ">
             <div className="w-full flex justify-center items-center h-full">
-              <Image src={model.img} alt={model.title} className={`h-[80%] `} />
+              <Image src={model.img} alt={model.title} />
             </div>
           </div>
         </div>
