@@ -1,8 +1,13 @@
+"use client";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import { rightImg, watchImg } from "../utils";
-const VideoCarousel = dynamic(() => import("./VideoCarousel"), { ssr: false });
-const ClientHighlight = dynamic(() => import("./ClientHighlight"));
+// const VideoCarousel = dynamic(() => import("./VideoCarousel"), { ssr: false });
+// const ClientHighlight = dynamic(() => import("./ClientHighlight"), {
+//   ssr: false,
+// });
+import VideoCarousel from "./VideoCarousel";
+import ClientHighlight from "./ClientHighlight";
 
 const Highlights = () => {
   return (
