@@ -1,9 +1,7 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import { rightImg, watchImg } from "../utils";
-// import VideoCarousel from "./VideoCarousel";
 const VideoCarousel = dynamic(() => import("./VideoCarousel"), { ssr: false });
-// import ClientHighlight from "./ClientHighlight";
 const ClientHighlight = dynamic(() => import("./ClientHighlight"));
 
 const Highlights = () => {
